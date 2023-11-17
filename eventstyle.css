@@ -1,9 +1,6 @@
 *{
-    margin: 0; padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    transition:all .2s cubic-bezier(.34,1.12,.68.1.31);
+
+    margin:0;
 }
 .main{
     margin: 0;
@@ -13,9 +10,9 @@ body {
     color: #fff;
     font-family: 'Arial', sans-serif;
     position: relative;
-    background-image: url("images/back4.jpg");
+    background-image: url("images/back3.jpg");
     background-size:cover; /* Adjust as needed */
-    background-repeat: no-repeat;
+            background-repeat: no-repeat;
             
 }
 
@@ -64,10 +61,21 @@ footer {
     background-color: #222;
     padding: 15px;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
+}
+.contact-info p,
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+}
+.social-media a {
+    margin-left: 10px;
 }
 #first-bar{
-    position:relative    
+    position:relative
+    
 }
 .first{
     align-items: center;
@@ -80,7 +88,8 @@ footer {
    background-color: transparent;
     position: absolute;
     display: flex;
-    z-index: 1;   
+    z-index: 1;
+    
 }
 #video:before{
     content:'';
@@ -89,14 +98,23 @@ footer {
    background-color: rgba(68, 4, 4, 0.598);
     position: absolute;
     display: flex;
-    z-index: 1; 
+    z-index: 1;
+   
 }
+
 video{
     height:4;
     width: 100%;
     position: absolute;
     display: flex;
-    z-index: -1;   
+    z-index: -1;
+    
+}
+.blog{
+    height:100%;
+    width:100%;
+    background: transparent;
+    position: absolute;
 }
 #nav-bar-back{
     background-color:  rgba(84, 6, 23, 0.638);
@@ -117,7 +135,8 @@ video{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2; 
+    z-index: 2;
+    
 }
 .nav-bar{
     background-color:  transparent;
@@ -129,10 +148,14 @@ video{
     color:#fff;
     position: absolute;
     z-index: 2;
-    font-weight: bold;   
+    
+   
+    
 }
 #headings{
     align-items: center;
+   
+
 }
 .logo{
     display: flex;
@@ -163,15 +186,33 @@ section{
 .videosection {
     position: relative;
 }
+.rulebook{
+    margin-top: 700px;
+    text-align: center;
+
+}
 .EVENTS{
+    position: relative;
+    
+    text-align: center;
+    display: flex;
+}
+.DEPTS{
     position: relative;
     margin-top: 700px;
     text-align: center;
 }
+.PHOTOGALLERY{
+    position: relative;
+    margin-top: 700px;
+    text-align: center;
+}
+
 #welcome{
     margin-left: 30px;
     text-align: left;
-    font-style: italic;    
+    font-style: italic;
+    
 }
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -187,15 +228,29 @@ h1 {
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
 }
+
 .event-card img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 12px;
 }
+
 .event-card h3 {
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
+   
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
 }
 #eventcards{display: flex;
 }
@@ -205,16 +260,20 @@ h1 {
     
     max-width: 1000px;
 }
+   
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
   }
+  
   figure {
     margin: 10px;
     text-align: center;
   }
+  
   img {
     max-width: 100%;
     height: auto;
@@ -222,123 +281,12 @@ h1 {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
   }
-  figcaption {
-    margin-top: 10px;
-  }
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-.slider-container {
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-}
-.slider-content {
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
-  }
-  
-  .card {
-   
-    background-color:rgba(31, 7, 83, 0.501);
-    
-  }
-  
-  .image-content,
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-    position: absolute;
-  }
-  
-  .image-content {
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-    display: flex;
-  }
-  
-  .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color:rgba(21, 11, 34, 0.392);
-    
-    top: 0;
-    left: 0;
-  }
-  
-  .card-image {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    background-color:rgba(31, 7, 83, 0.501);
-    border-radius: 50%;
-    padding: 3px;
-    margin-left: 600px;
-  }
-  .card-image img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid rgba(21, 11, 34, 0.392);
-  }
-  .name {
-    font-size: 18px;
-    font-weight: 600;
-    color:white;
-  }
-  .description {
-    font-size: 14px;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-  }
-  .swiper-navBtn {
-    color:rgba(21, 11, 34, 0.392);
-    transition: all 0.3s ease;
-  }
-  .swiper-navBtn:hover {
-    color: rgba(46, 2, 11, 0.746);
-  }
-  .swiper-navBtn::before,
-  .swiper-navBtn::after {
-    font-size: 35px;
-  }
-  .swiper-button-next {
-    right: 0;
-  }
-  .swiper-button-prev {
-    left: 0;
-  }
-  .swiper-pagination-bullet {
-    background-color: rgba(21, 11, 34, 0.392);
-    opacity: 1;
-  }
-  .swiper-pagination-bullet-active {
-    background-color:rgba(21, 11, 34, 0.392);
-  }
-  @media (max-width: 768px) {
-    .slider-content {
-      margin: 0 10px;
-    }
-    .swiper-navBtn {
-      display: none;
-    }
-  }
-  .schedule{
-    margin-top: 610px;
-  }
-  .sched{
-    align-items: center;
-  }
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
+
 .course-card {
     background-color:rgba(31, 7, 83, 0.501);
     border-radius: 10px;
@@ -347,10 +295,13 @@ h1 {
     overflow: hidden;
     position: relative;
 }
+
+
 .course-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 .course-image {
     width: 100%;
     height: 300px;
@@ -361,23 +312,28 @@ h1 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 .course-details {
     padding: 1.5rem;
 }
+
 .course-title {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
+
 .course-description {
     color: #777;
     margin-bottom: 1rem;
 }
+
 .course-price {
     font-size: 1.25rem;
     font-weight: 600;
     color: #00b359;
 }
+
 .purchase-button {
     background-color: #3498db;
     color: #fff;
@@ -387,6 +343,7 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .purchase-button:hover {
     background-color: #2980b9;
 }
@@ -402,6 +359,8 @@ h1 {
     align-items: center;
     margin-left: 500px;
 }
+
+/* Styles for the modal content */
 .modal-content {
     background: #fff;
     padding: 20px;
@@ -411,6 +370,8 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: black;
 }
+
+/* Close button style */
 .close-button {
     cursor: pointer;
     position: absolute;
@@ -419,6 +380,7 @@ h1 {
     font-size: 18px;
     color: white;
 }
+
 .event{
     text-align: center;
     font-size: 50px;
@@ -428,8 +390,8 @@ h1 {
 .rounded-button {
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #3498db; 
-    color: #ffffff; 
+    background-color: #3498db; /* Change the background color as needed */
+    color: #ffffff; /* Change the text color as needed */
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -438,6 +400,9 @@ h1 {
     width: 200px;
     margin-left: 800px;
     font-weight: bold;
+}
+.twocard{
+    display: flex;
 }
 #h1{
     text-align: center;
